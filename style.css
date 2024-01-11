@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Open-sans, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  height: 90px;
+  background-color: #000000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.section-1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(
+    189.96% 61.18% at 50% 38.82%,
+    rgba(255, 181, 72, 0) 0%,
+    rgba(52, 44, 29, 0.8) 73.22%,
+    #08090a 99.74%
+  );
+}
+
+.bg-section-1 {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+}
+
+#nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#nav-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#nav-auth {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  gap: 10px;
+}
+
+#nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#nav-auth a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.title-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+}
+
+.button-play {
+  background-image: linear-gradient(#ffb548, #f3af34);
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  font-size: 12px;
+  font-weight: 700;
+  margin: auto;
+}
+
+.section-2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(
+    136.03% 54.57% at 50% 48.04%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0) 60.63%,
+    #080a0b 99.74%
+  );
+}
+
+.special-title {
+  color: #fff;
+  font-family: Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.sub-title {
+  color: #fff;
+  font-family: Arial;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-section-2 {
+  padding: 170px;
+  flex-grow: 1;
+}
+
+.right-section-2 {
+  padding: 200px;
+  flex-grow: 1;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-carousel {
+  max-width: 500px;
+}
+
+.circle-dot {
+  display: flex;
+  flex-direction: column;
+}
+
+.yellow-title {
+  color: #ffb548;
+  font-family: Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.step-desc {
+  color: #fff;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 122.222% */
+}
+
+.can-play {
+  color: #fff;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  align-content: center;
+}
+
+.req-table {
+  display: flex;
+  flex-wrap: wrap;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  width: 570px;
+}
+
+.req-cell {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 20px;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.req-desc {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.section-4 {
+  background: radial-gradient(
+    38.04% 77.62% at 24.21% 47.47%,
+    rgba(35, 15, 15, 0) 0%,
+    rgba(0, 0, 0, 0) 51.1%,
+    #080a0b 99.74%
+  );
+  flex-shrink: 0;
+  height: 740px;
+  width: 100%;
+}
+
+.quotes-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  padding-right: 200px;
+  justify-content: center;
+}
+
+.quotes {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  width: 450px;
+}
+
+.quotes:nth-of-type(2) {
+  align-self: flex-start;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-height: 64px;
+}
+
+.grey-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 0.5;
+}
+
+.date {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.section-5 {
+  height: 960px;
+  width: 100%;
+  background: #080a0b;
+  padding-top: 100px;
+}
+
+.desc {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.newsletter-img-mask {
+  width: fit-content;
+  background-image: radial-gradient(
+    54.01% 45.54% at 50% 50%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0) 46.15%,
+    #080a0b 99.74%
+  );
+  height: 100%;
+}
+
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 400px;
+}
+
+.newsletter-container {
+  display: flex;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.newsletter-subs {
+  padding-top: 42px;
+  display: flex;
+  gap: 20px;
+}
+
+.subs-form {
+  width: 70%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+::placeholder {
+  color: #ffb548;
+  opacity: 1; /* Firefox */
+}
+
+.footer {
+  width: 100%;
+  padding: 32px 180px;
+  background-color: #080a0b;
+}
+
+.top-footer-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  border-bottom: 2px;
+}
+
+.footer-nav-item {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.border-footer {
+  stroke-width: 0.874px;
+  stroke: #fff;
+  opacity: 0.5;
+  margin: 10px 0;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rules {
+  color: #fff;
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
